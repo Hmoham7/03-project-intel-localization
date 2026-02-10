@@ -239,5 +239,32 @@
       <p>Intel Sustainability | Building a more responsible future together.</p>
     </div>
   </footer>
+
+  <script>
+    // Watch for language changes (like Google Translate) and update direction.
+    const rtlLanguages = [
+      "ar", "he", "fa", "ur", "ps", "sd", "ug", "dv", "ku"
+    ];
+
+    const htmlEl = document.documentElement;
+
+    const isRtlLanguage = (lang) => {
+      if (!lang) return false;
+      const baseLang = lang.toLowerCase().split("-")[0];
+      return rtlLanguages.includes(baseLang);
+    };
+
+    const updateDirection = () => {
+      const currentLang = htmlEl.getAttribute("lang");
+      htmlEl.setAttribute("dir", isRtlLanguage(currentLang) ? "rtl" : "ltr");
+    };
+
+    // Run once on load.
+    updateDirection();
+
+    // Watch for changes to the lang attribute.
+    const observer = new MutationObserver(updateDirection);
+    observer.observe(htmlEl, { attributes: true, attributeFilter: ["lang"] });
+  </script>
 </body>
 </html>
