@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="auto">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -23,134 +24,220 @@
     <a class="hero-cta" href="#timeline">Explore the goals</a>
   </header>
 
-  <!-- Timeline Cards Section -->
-  <section id="timeline" class="timeline-track">
-    <!-- Card 1: 1968 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>1968</h2>
-        <h3>Intel Founded</h3>
-      <img class="card-image" src="img/1.jpg" alt="Early Intel team and lab" />
-        <p class="card-summary">
-          The company is formed, setting a long-term path for innovation.
-        </p>
-        <p class="card-detail">
-          Robert Noyce and Gordon Moore rename NM Electronics to Intel
-          Corporation, laying the foundation for a global technology leader.
-        </p>
-      </div>
+  <main>
+    <!-- Timeline Cards Section -->
+    <section id="timeline" class="timeline-track" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="timeline-header">
+          <h2 id="timeline-title" class="section-title">Sustainability Timeline</h2>
+          <p class="section-subtitle">Select "Learn more" to explore each milestone.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Card 1: 1968 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-1968" aria-describedby="summary-1968">
+              <h3 id="year-1968">1968</h3>
+              <h4>Intel Founded</h4>
+              <img class="card-image" src="img/1.jpg" alt="Early Intel team and lab" />
+              <p class="card-summary" id="summary-1968">
+                The company is formed, setting a long-term path for innovation.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  Robert Noyce and Gordon Moore rename NM Electronics to Intel
+                  Corporation, laying the foundation for a global technology leader.
+                </p>
+              </details>
+            </article>
+          </div>
 
-    <!-- Card 2: 1971 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>1971</h2>
-        <h3>First Microprocessor</h3>
-      <img class="card-image" src="img/2.jpg" alt="Vintage microprocessor close-up" />
-        <p class="card-summary">
-          A breakthrough that reshapes computing and efficiency.
-        </p>
-        <p class="card-detail">
-          Intel debuts the 4004, the world's first commercial microprocessor,
-          sparking a wave of smaller, more powerful devices.
-        </p>
-      </div>
+          <!-- Card 2: 1971 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-1971" aria-describedby="summary-1971">
+              <h3 id="year-1971">1971</h3>
+              <h4>First Microprocessor</h4>
+              <img class="card-image" src="img/2.jpg" alt="Vintage microprocessor close-up" />
+              <p class="card-summary" id="summary-1971">
+                A breakthrough that reshapes computing and efficiency.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  Intel debuts the 4004, the world's first commercial microprocessor,
+                  sparking a wave of smaller, more powerful devices.
+                </p>
+              </details>
+            </article>
+          </div>
 
-    <!-- Card 3: 1978 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>1978</h2>
-        <h3>8086 Processor</h3>
-      <img class="card-image" src="img/Intel-Core.webp" alt="Intel processor on a board" />
-        <p class="card-summary">
-          A durable architecture that powers modern computing.
-        </p>
-        <p class="card-detail">
-          The 8086 processor establishes the x86 architecture that still
-          powers many PCs and servers today.
-        </p>
-      </div>
+          <!-- Card 3: 1978 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-1978" aria-describedby="summary-1978">
+              <h3 id="year-1978">1978</h3>
+              <h4>8086 Processor</h4>
+              <img class="card-image" src="img/Intel-Core.webp" alt="Intel processor on a board" />
+              <p class="card-summary" id="summary-1978">
+                A durable architecture that powers modern computing.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  The 8086 processor establishes the x86 architecture that still
+                  powers many PCs and servers today.
+                </p>
+              </details>
+            </article>
+          </div>
 
-    <!-- Card 4: 1985 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>1985</h2>
-        <h3>386 Processor</h3>
-      <img class="card-image" src="img/4.jpg" alt="Conference focused on sustainability" />
-        <p class="card-summary">
-          Performance gains enable more work with less energy.
-        </p>
-        <p class="card-detail">
-          Intel introduces the 32-bit 386 processor, boosting performance
-          and enabling more efficient multitasking.
-        </p>
-      </div>
+          <!-- Card 4: 1985 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-1985" aria-describedby="summary-1985">
+              <h3 id="year-1985">1985</h3>
+              <h4>386 Processor</h4>
+              <img class="card-image" src="img/4.jpg" alt="Conference focused on sustainability" />
+              <p class="card-summary" id="summary-1985">
+                Performance gains enable more work with less energy.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  Intel introduces the 32-bit 386 processor, boosting performance
+                  and enabling more efficient multitasking.
+                </p>
+              </details>
+            </article>
+          </div>
 
-    <!-- Card 5: 2006 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>2006</h2>
-        <h3>Peak GHG Emissions</h3>
-      <img class="card-image" src="img/3.jpg" alt="Industrial facility and energy systems" />
-        <p class="card-summary">
-          A turning point that drives long-term reduction strategies.
-        </p>
-        <p class="card-detail">
-          Intel reaches peak operational emissions and begins major
-          investments in abatement, renewables, and efficient manufacturing.
-        </p>
-      </div>
+          <!-- Card 5: 2006 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-2006" aria-describedby="summary-2006">
+              <h3 id="year-2006">2006</h3>
+              <h4>Peak GHG Emissions</h4>
+              <img class="card-image" src="img/3.jpg" alt="Industrial facility and energy systems" />
+              <p class="card-summary" id="summary-2006">
+                A turning point that drives long-term reduction strategies.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  Intel reaches peak operational emissions and begins major
+                  investments in abatement, renewables, and efficient manufacturing.
+                </p>
+              </details>
+            </article>
+          </div>
 
-    <!-- Card 6: 2020 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>2020</h2>
-        <h3>RISE Strategy</h3>
-        <img class="card-image" src="img/intel_2020.jpg" alt="Intel campus and sustainability initiatives" />
-        <p class="card-summary">
-          Clear goals for climate, water, and waste.
-        </p>
-        <p class="card-detail">
-          Intel launches its RISE strategy and 2030 goals to accelerate
-          progress on climate action, water stewardship, and circularity.
-        </p>
-      </div>
+          <!-- Card 6: 2020 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-2020" aria-describedby="summary-2020">
+              <h3 id="year-2020">2020</h3>
+              <h4>RISE Strategy</h4>
+              <img class="card-image" src="img/intel_2020.jpg" alt="Intel campus and sustainability initiatives" />
+              <p class="card-summary" id="summary-2020">
+                Clear goals for climate, water, and waste.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  Intel launches its RISE strategy and 2030 goals to accelerate
+                  progress on climate action, water stewardship, and circularity.
+                </p>
+              </details>
+            </article>
+          </div>
 
-    <!-- Card 7: 2022 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>2022</h2>
-        <h3>Net-Zero By 2040</h3>
-        <img class="card-image" src="img/intel_2022.webp" alt="Intel facility with clean energy focus" />
-        <p class="card-summary">
-          A long-term pledge to transform operations.
-        </p>
-        <p class="card-detail">
-          Intel commits to net-zero greenhouse gas emissions (Scope 1 and 2)
-          across global operations by 2040.
-        </p>
-      </div>
+          <!-- Card 7: 2022 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-2022" aria-describedby="summary-2022">
+              <h3 id="year-2022">2022</h3>
+              <h4>Net-Zero By 2040</h4>
+              <img class="card-image" src="img/intel_2022.webp" alt="Intel facility with clean energy focus" />
+              <p class="card-summary" id="summary-2022">
+                A long-term pledge to transform operations.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  Intel commits to net-zero greenhouse gas emissions (Scope 1 and 2)
+                  across global operations by 2040.
+                </p>
+              </details>
+            </article>
+          </div>
 
-    <!-- Card 8: 2023 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>2023</h2>
-        <h3>Renewable Electricity</h3>
-        <img class="card-image" src="img/renew electricity.jpg" alt="Renewable energy and power generation" />
-        <p class="card-summary">
-          Near total renewable energy usage worldwide.
-        </p>
-        <p class="card-detail">
-          Intel reaches 99% renewable electricity usage globally, cutting
-          operational emissions and advancing its climate targets.
-        </p>
-      </div>
+          <!-- Card 8: 2023 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-2023" aria-describedby="summary-2023">
+              <h3 id="year-2023">2023</h3>
+              <h4>Renewable Electricity</h4>
+              <img class="card-image" src="img/renew electricity.jpg" alt="Renewable energy and power generation" />
+              <p class="card-summary" id="summary-2023">
+                Near total renewable energy usage worldwide.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  Intel reaches 99% renewable electricity usage globally, cutting
+                  operational emissions and advancing its climate targets.
+                </p>
+              </details>
+            </article>
+          </div>
 
-    <!-- Card 9: 2024 -->
-    <div class="timeline-card" tabindex="0">
-        <h2>2024</h2>
-        <h3>Sustainability Summit</h3>
-        <img class="card-image" src="img/sustanability summit.jpg" alt="Sustainability summit event and collaboration" />
-        <p class="card-summary">
-          Collaboration across the semiconductor ecosystem.
-        </p>
-        <p class="card-detail">
-          Intel hosts its first Sustainability Summit to align suppliers,
-          policymakers, and leaders on next-gen responsible manufacturing.
-        </p>
+          <!-- Card 9: 2024 -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <article class="timeline-card h-100 w-100" aria-labelledby="year-2024" aria-describedby="summary-2024">
+              <h3 id="year-2024">2024</h3>
+              <h4>Sustainability Summit</h4>
+              <img class="card-image" src="img/sustanability summit.jpg" alt="Sustainability summit event and collaboration" />
+              <p class="card-summary" id="summary-2024">
+                Collaboration across the semiconductor ecosystem.
+              </p>
+              <details class="learn-more">
+                <summary class="btn btn-outline-primary btn-sm">Learn more</summary>
+                <p class="card-detail">
+                  Intel hosts its first Sustainability Summit to align suppliers,
+                  policymakers, and leaders on next-gen responsible manufacturing.
+                </p>
+              </details>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter-section" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-text">
+            <h2 id="newsletter-title" class="section-title">Sustainability Newsletter</h2>
+            <p class="section-subtitle">
+              Get updates on climate goals, clean energy progress, and new milestones.
+            </p>
+          </div>
+          <form class="row g-3 align-items-end" aria-label="Newsletter sign-up form">
+            <div class="col-12 col-md-7">
+              <label class="form-label" for="newsletter-email">Email address</label>
+              <input type="email" class="form-control" id="newsletter-email" name="email" placeholder="name@example.com" required />
+            </div>
+            <div class="col-12 col-md-5">
+              <button type="submit" class="btn btn-primary w-100">Sign up</button>
+            </div>
+            <div class="col-12">
+              <p class="form-help">We respect your inbox. You can unsubscribe at any time.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Intel Sustainability | Building a more responsible future together.</p>
     </div>
-  </section>
-  <p class="timeline-note">Scroll to view the timeline | Hover over cards to learn more.</p>
+  </footer>
 </body>
 </html>

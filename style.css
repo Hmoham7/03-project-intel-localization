@@ -13,6 +13,20 @@ body {
 	background: linear-gradient(135deg, #cfe6ff, #eaf4ff);
 }
 
+/* Basic text helpers that adapt to RTL/LTR */
+.section-title {
+	margin: 0 0 8px;
+	font-size: 1.6rem;
+	color: #0b4ea2;
+	text-align: start;
+}
+
+.section-subtitle {
+	margin: 0 0 20px;
+	color: #1f3b5b;
+	text-align: start;
+}
+
 /* Hero section */
 .hero {
 	padding: 48px 20px 32px;
@@ -78,33 +92,31 @@ body {
 
 /* Timeline layout */
 .timeline-track {
-	padding: 32px 20px 16px;
-	display: flex;
-	gap: 16px;
-	overflow-x: auto;
-	padding-bottom: 12px;
-	scroll-snap-type: x mandatory;
+	padding: 32px 0 16px;
+}
+
+.timeline-header {
+	margin-bottom: 20px;
 }
 
 /* Card styles */
 .timeline-card {
-	flex: 0 0 260px;
 	background: #ffffff;
 	border-radius: 16px;
 	padding: 16px;
 	border: 2px solid #d6e6ff;
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-	scroll-snap-align: start;
 	transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+	text-align: start;
 }
 
-.timeline-card h2 {
+.timeline-card h3 {
 	margin: 0 0 6px;
 	color: #0b4ea2;
 	font-size: 1.4rem;
 }
 
-.timeline-card h3 {
+.timeline-card h4 {
 	margin: 0 0 10px;
 	font-size: 1.05rem;
 	color: #124d84;
@@ -124,17 +136,27 @@ body {
 	line-height: 1.5;
 }
 
-/* Hidden detail text for hover reveal */
+/* Learn more block for extra detail */
+.learn-more {
+	margin-top: 12px;
+}
+
+.learn-more summary {
+	display: inline-block;
+	list-style: none;
+	cursor: pointer;
+}
+
+.learn-more summary::-webkit-details-marker {
+	display: none;
+}
+
 .card-detail {
 	margin: 12px 0 0;
 	padding-top: 10px;
 	border-top: 1px solid #e2ecff;
 	line-height: 1.5;
 	color: #1f2f45;
-	max-height: 0;
-	opacity: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease, opacity 0.2s ease;
 }
 
 .timeline-card:hover,
@@ -144,12 +166,12 @@ body {
 	background: #0b4ea2;
 }
 
-.timeline-card:hover h2,
 .timeline-card:hover h3,
+.timeline-card:hover h4,
 .timeline-card:hover .card-summary,
 .timeline-card:hover .card-detail,
-.timeline-card:focus-within h2,
 .timeline-card:focus-within h3,
+.timeline-card:focus-within h4,
 .timeline-card:focus-within .card-summary,
 .timeline-card:focus-within .card-detail {
 	color: #ffffff;
@@ -157,26 +179,39 @@ body {
 
 .timeline-card:hover .card-detail,
 .timeline-card:focus-within .card-detail {
-	max-height: 140px;
-	opacity: 1;
 	border-top: 1px solid #7fb1ff;
 }
 
-.timeline-note {
-	margin: 8px 20px 28px;
-	text-align: center;
-	color: #0b4ea2;
-	font-weight: bold;
+.timeline-card:hover .btn,
+.timeline-card:focus-within .btn {
+	border-color: #ffffff;
+	color: #ffffff;
 }
 
-/* Responsive: stack cards vertically on small screens */
-@media (max-width: 700px) {
-	.timeline-track {
-		flex-direction: column;
-		overflow-x: visible;
-	}
+/* Newsletter styles */
+.newsletter-section {
+	padding: 20px 0 40px;
+}
 
-	.timeline-card {
-		flex: 1 1 auto;
-	}
+.newsletter-card {
+	background: #ffffff;
+	border-radius: 16px;
+	padding: 24px;
+	border: 2px solid #d6e6ff;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-help {
+	margin: 0;
+	font-size: 0.9rem;
+	color: #3c4b5f;
+	text-align: start;
+}
+
+/* Footer styles */
+.site-footer {
+	background: #0b3f86;
+	color: #ffffff;
+	padding: 16px 0 24px;
+	text-align: center;
 }
