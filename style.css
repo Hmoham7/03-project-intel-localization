@@ -44,10 +44,11 @@ body {
 	margin: 0 auto 16px;
 	width: 120px;
 	height: auto;
-	background: linear-gradient(135deg, #0b4ea2, #0f74c9, #0b3f86);
-	padding: 10px 16px;
-	border-radius: 12px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+	/* Remove the white badge so the logo blends into the hero background */
+	background: transparent;
+	padding: 0;
+	border-radius: 0;
+	box-shadow: none;
 }
 
 .hero-title {
