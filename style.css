@@ -9,7 +9,8 @@ body {
 	margin: 0;
 	font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
 	color: #0a1b2b;
-	background: linear-gradient(135deg, #e6f2ff, #f7fbff);
+	/* Light blue page background for the full site */
+	background: linear-gradient(135deg, #cfe6ff, #eaf4ff);
 }
 
 /* Hero section */
@@ -41,7 +42,7 @@ body {
 .hero-logo {
 	display: block;
 	margin: 0 auto 16px;
-	width: 80px;
+	width: 140px;
 	height: auto;
 	background: #ffffff;
 	padding: 10px 16px;
